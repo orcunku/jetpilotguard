@@ -1,0 +1,20 @@
+{
+  "n_train": 6000,
+  "n_test": 2000,
+  "positive_rate_test": 0.108,
+  "roc_auc": 0.7468586509715993,
+  "average_precision": 0.48666581285587907,
+  "decision_threshold": 0.28518829884950103,
+  "precision": 0.6326530612244898,
+  "recall": 0.4305555555555556,
+  "f1": 0.512396694214876,
+  "brier_score": 0.07153555586967507,
+  "cv_roc_auc_mean": 0.75653784588901,
+  "cv_roc_auc_std": 0.009760442489956394,
+  "confusion": {
+    "tn": 1730,
+    "fp": 54,
+    "fn": 123,
+    "tp": 93
+  }
+}

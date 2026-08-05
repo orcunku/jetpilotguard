@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+# ML/MLOps artifacts (reproducible via scripts)
+models/*.joblib
+mlruns/
+.dvc/cache/
+# Jupyter
+.ipynb_checkpoints/
+.venv/
+__pycache__/
+*.pyc
+models/*.joblib
+mlruns/
+mlflow.db
+*.db
+.dvc/cache/
+.gradio/
+
+# Downloaded tools — never commit these
+grafana/
+prometheus/

@@ -1,0 +1,50 @@
+schema: '2.0'
+stages:
+  train_per_frame:
+    cmd: python -m scripts.train_model
+    deps:
+    - path: scripts/train_model.py
+      hash: md5
+      md5: 146d4e6c0feb991e0451891bface3df1
+      size: 987
+    - path: src/jetpilotguard/ml/classifier.py
+      hash: md5
+      md5: 4eaf5f5ffd2028c4097da3222871966b
+      size: 7085
+    - path: src/jetpilotguard/ml/dataset.py
+      hash: md5
+      md5: baac6c54aa8976c57e86c6847101a03f
+      size: 4189
+    outs:
+    - path: models/impairment.joblib
+      hash: md5
+      md5: 43f016b2e202581e9e8dd630a687e673
+      size: 775584
+    - path: models/metrics.json
+      hash: md5
+      md5: 88946527e638504e6e6858e2265d85dd
+      size: 504
+  train_temporal:
+    cmd: python -m scripts.train_temporal
+    deps:
+    - path: scripts/train_temporal.py
+      hash: md5
+      md5: 58fda28123ce3b49deba9c0a0d34a15c
+      size: 1304
+    - path: src/jetpilotguard/ml/sequence_dataset.py
+      hash: md5
+      md5: fd147ea05a8bc811e5736bfeb023f211
+      size: 7124
+    - path: src/jetpilotguard/ml/temporal.py
+      hash: md5
+      md5: dda0065a330276066eccbf3fc165f983
+      size: 7953
+    outs:
+    - path: models/temporal_comparison.json
+      hash: md5
+      md5: 172014fd4701af56ad0813fd46eb78eb
+      size: 349
+    - path: models/temporal_impairment.joblib
+      hash: md5
+      md5: c77a71767b917f66b201dd4db7b86602
+      size: 267131

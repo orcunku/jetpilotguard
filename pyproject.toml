@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jetpilotguard"
+version = "0.1.0"
+description = "Simulated human-autonomy flight-safety watchdog with a deterministic Auto-GCAS layer and an ML pilot-impairment advisory."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Orcun Kusdemir" }]
+keywords = ["machine-learning", "safety-critical", "aerospace", "simulation", "mcp"]
+
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scikit-learn>=1.3",
+    "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.30", "plotly>=5.18"]
+mcp = ["fastmcp>=2.0"]
+explain = ["shap>=0.44"]
+serve = ["fastapi>=0.110", "uvicorn[standard]>=0.27", "prometheus-client>=0.20", "httpx>=0.27"]
+mlops = ["mlflow>=2.10", "dvc>=3.0"]
+notebook = ["jupyter>=1.0", "matplotlib>=3.7"]
+dev = ["pytest>=7.4", "pytest-cov>=4.1", "ruff>=0.4", "shap>=0.44", "fastapi>=0.110", "httpx>=0.27", "prometheus-client>=0.20"]
+
+[project.scripts]
+jetpilotguard-train = "scripts.train_model:main"
+jetpilotguard-eval = "scripts.evaluate_system:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 90
+target-version = "py310"
+
+[tool.ruff.lint.per-file-ignores]
+# dict(...) literals read more clearly than {...} in test scenario tables.
+"tests/*" = ["C408"]
+"scripts/cli_demo.py" = ["C408"]
+"scripts/load_generator.py" = ["C408"]

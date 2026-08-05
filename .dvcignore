@@ -1,0 +1,3 @@
+# Patterns DVC should ignore when tracking directories.
+__pycache__/
+*.pyc

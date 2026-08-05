@@ -1,0 +1,52 @@
+# JetPilotGuard monitoring stack.
+#
+# One command brings up three services:
+#   jetpilotguard   -- the FastAPI safety engine (port 8000)
+#   prometheus  -- scrapes jetpilotguard:8000/metrics (port 9090)
+#   grafana     -- dashboards, pre-provisioned (port 3000)
+#
+# Usage:
+#   docker compose up --build       # start (first run builds the image)
+#   docker compose down             # stop and free memory
+#
+# Then open:
+#   http://localhost:8000/docs      -- interactive API
+#   http://localhost:9090           -- Prometheus
+#   http://localhost:3000           -- Grafana (login admin / admin)
+
+services:
+  jetpilotguard:
+    build: .
+    container_name: jetpilotguard
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./docker/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    depends_on:
+      - jetpilotguard
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./docker/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    depends_on:
+      - prometheus

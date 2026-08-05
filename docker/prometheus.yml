@@ -1,0 +1,14 @@
+# Prometheus scrape configuration for JetPilotGuard.
+# Teaching note: Prometheus periodically fetches /metrics from each target
+# listed here and stores the results as time-series keyed by metric name.
+
+global:
+  scrape_interval: 5s        # how often to pull metrics
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: jetpilotguard
+    static_configs:
+      # 'jetpilotguard' is the service name from docker-compose; Docker's internal
+      # DNS resolves it to the container. Port 8000 is the FastAPI app.
+      - targets: ["jetpilotguard:8000"]

@@ -1,0 +1,32 @@
+# DVC pipeline for JetPilotGuard.
+#
+# Teaching note: this declares reproducible stages. Each stage names a command,
+# its dependencies (code it relies on), and its outputs (files it produces).
+# Run the whole pipeline with:  dvc repro
+# DVC skips stages whose inputs haven't changed, so it only recomputes what's
+# stale -- reproducibility without wasted work.
+
+stages:
+  train_per_frame:
+    cmd: python -m scripts.train_model
+    deps:
+      - src/jetpilotguard/ml/dataset.py
+      - src/jetpilotguard/ml/classifier.py
+      - scripts/train_model.py
+    outs:
+      - models/impairment.joblib
+    metrics:
+      - models/metrics.json:
+          cache: false
+
+  train_temporal:
+    cmd: python -m scripts.train_temporal
+    deps:
+      - src/jetpilotguard/ml/sequence_dataset.py
+      - src/jetpilotguard/ml/temporal.py
+      - scripts/train_temporal.py
+    outs:
+      - models/temporal_impairment.joblib
+    metrics:
+      - models/temporal_comparison.json:
+          cache: false
