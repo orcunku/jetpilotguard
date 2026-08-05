@@ -2,18 +2,23 @@
 
 ### Interactive cockpit (static demo)
 <img width="1307" height="668" alt="index1" src="https://github.com/user-attachments/assets/fd203b5a-a5dc-4b57-9b2f-260e62757546" />
+
 ### MlFlow
 <img width="1350" height="677" alt="mlflow" src="https://github.com/user-attachments/assets/02058d8c-699a-4d4a-8f00-d2a7afe71400" />
+
 ### Prometheus
 <img width="1350" height="342" alt="prometheus2" src="https://github.com/user-attachments/assets/803af8f2-c56d-4fa7-ae76-f553fb8be037" />
 <img width="1314" height="650" alt="prometheus" src="https://github.com/user-attachments/assets/1b406f94-27f0-4bae-b51f-e4174ebdce0f" />
+
 ###  Evaluation Runs
 <img width="771" height="641" alt="metrics" src="https://github.com/user-<img width="1311" height="628" alt="evalruns" src="https://github.com/user-attachments/assets/9a30ed8c-5e3c-48d4-b61e-2fc5ce629cd7" />
 attachments/assets/2c223c9d-b5b9-48d8-a2f2-55b22a5811c7" />
 <img width="1282" height="618" alt="index2" src="https://github.com/user-attachments/assets/08722097-c0cb-49de-ab72-b2fcb979f3c6" />
+
 ### Live monitoring (Prometheus + Grafana)
 <img width="1330" height="637" alt="dashboard2" src="https://github.com/user-attachments/assets/c9cd599d-8694-453e-b2a8-2eb7c22a0b6b" />
 <img width="1333" height="677" alt="dashboard1" src="https://github.com/user-attachments/assets/fd001d5c-85a8-4343-a17c-0d9323a750c1" />
+
 ### Assessment states
 <img width="1362" height="637" alt="gradio3" src="https://github.com/user-attachments/assets/d8f7ece3-6d7e-4a58-91c0-7bfe24cb9619" />
 <img width="1348" height="652" alt="gradio2" src="https://github.com/user-attachments/assets/1e894b02-564d-4080-8dfd-e2ff8cbf0a8b" />
