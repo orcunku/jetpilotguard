@@ -1,5 +1,20 @@
 # JetPilotGuard
 
+<img width="1350" height="677" alt="mlflow" src="https://github.com/user-attachments/assets/02058d8c-699a-4d4a-8f00-d2a7afe71400" />
+<img width="1350" height="342" alt="prometheus2" src="https://github.com/user-attachments/assets/803af8f2-c56d-4fa7-ae76-f553fb8be037" />
+<img width="1314" height="650" alt="prometheus" src="https://github.com/user-attachments/assets/1b406f94-27f0-4bae-b51f-e4174ebdce0f" />
+<img width="771" height="641" alt="metrics" src="https://github.com/user-attachments/assets/2c223c9d-b5b9-48d8-a2f2-55b22a5811c7" />
+<img width="1282" height="618" alt="index2" src="https://github.com/user-attachments/assets/08722097-c0cb-49de-ab72-b2fcb979f3c6" />
+<img width="1307" height="668" alt="index1" src="https://github.com/user-attachments/assets/fd203b5a-a5dc-4b57-9b2f-260e62757546" />
+<img width="1330" height="637" alt="dashboard2" src="https://github.com/user-attachments/assets/c9cd599d-8694-453e-b2a8-2eb7c22a0b6b" />
+<img width="1333" height="677" alt="dashboard1" src="https://github.com/user-attachments/assets/fd001d5c-85a8-4343-a17c-0d9323a750c1" />
+<img width="1362" height="637" alt="gradio3" src="https://github.com/user-attachments/assets/d8f7ece3-6d7e-4a58-91c0-7bfe24cb9619" />
+<img width="1348" height="652" alt="gradio2" src="https://github.com/user-attachments/assets/1e894b02-564d-4080-8dfd-e2ff8cbf0a8b" />
+<img width="1311" height="647" alt="gradio1" src="https://github.com/user-attachments/assets/b37967eb-389e-47b3-8420-e3ac49dbde11" />
+
+
+
+
 **A simulated human-autonomy flight-safety watchdog: a deterministic ground-collision override fused with a machine-learning pilot-impairment advisory.**
 
 > ⚠️ **Scope & honesty statement.** JetPilotGuard is a **research and portfolio demonstration** built on **synthetic data**. It is *not* certified avionics and makes no airworthiness claim. Its value is as a clean, tested example of the architecture real safety systems use: a simple, auditable deterministic core for anything that can override a human, with ML confined to advisory warnings. Every number below is measured on simulated data and reproducible with the commands shown.
