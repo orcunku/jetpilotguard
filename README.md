@@ -11,8 +11,6 @@
 <img width="1314" height="650" alt="prometheus" src="https://github.com/user-attachments/assets/1b406f94-27f0-4bae-b51f-e4174ebdce0f" />
 
 ###  Evaluation Runs
-<img width="771" height="641" alt="metrics" src="https://github.com/user-<img width="1311" height="628" alt="evalruns" src="https://github.com/user-attachments/assets/9a30ed8c-5e3c-48d4-b61e-2fc5ce629cd7" />
-attachments/assets/2c223c9d-b5b9-48d8-a2f2-55b22a5811c7" />
 
 <img width="1282" height="618" alt="index2" src="https://github.com/user-attachments/assets/08722097-c0cb-49de-ab72-b2fcb979f3c6" />
 
