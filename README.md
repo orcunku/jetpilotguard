@@ -11,8 +11,8 @@
 <img width="1314" height="650" alt="prometheus" src="https://github.com/user-attachments/assets/1b406f94-27f0-4bae-b51f-e4174ebdce0f" />
 
 ###  Evaluation Runs
+<img width="1311" height="628" alt="evalruns" src="https://github.com/user-attachments/assets/9996d9f5-c8aa-41b0-9799-a0e27f4e7b34" />
 
-<img width="1282" height="618" alt="index2" src="https://github.com/user-attachments/assets/08722097-c0cb-49de-ab72-b2fcb979f3c6" />
 
 ### Live monitoring (Prometheus + Grafana)
 <img width="1330" height="637" alt="dashboard2" src="https://github.com/user-attachments/assets/c9cd599d-8694-453e-b2a8-2eb7c22a0b6b" />
