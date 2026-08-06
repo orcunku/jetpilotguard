@@ -1,4 +1,8 @@
 # JetPilotGuard
+## 🔗 Live pages
+
+- **[Showcase page](https://orcunku.github.io/jetpilotguard/showcase/)** — project overview
+- **[Interactive demo](https://orcunku.github.io/jetpilotguard/demo/)** — try it in your browser
 
 ### Interactive cockpit (static demo)
 <img width="1307" height="668" alt="index1" src="https://github.com/user-attachments/assets/fd203b5a-a5dc-4b57-9b2f-260e62757546" />
