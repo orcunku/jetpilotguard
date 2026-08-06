@@ -1,6 +1,7 @@
 # JetPilotGuard
 ## 🔗 Live pages
 
+- **[Landing page](https://pilotguard-fusion.lovable.app/)** — interactive project site
 - **[Showcase page](https://orcunku.github.io/jetpilotguard/showcase/)** — project overview
 - **[Interactive demo](https://orcunku.github.io/jetpilotguard/demo/)** — try it in your browser
 
